@@ -1,0 +1,50 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    background-color: lightgray;
+  }
+  
+  #top {
+    background-color: blue;
+    height: 100px;
+  }
+  
+  #bottom {
+    display: flex;
+    height: 200px;
+  }
+  
+  #left {
+    background-color: red;
+    height: 200px;
+    width: 100px;
+  }
+  
+  #right {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    margin-left: 10px;
+  }
+  
+  #middle {
+    display: flex;
+    height: 100px;
+    width: 200px;
+  }
+  
+  #purple {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+  }
+  
+  #pink {
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+  }
