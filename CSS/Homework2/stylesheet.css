@@ -1,0 +1,39 @@
+img{margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;    
+}
+
+  
+.SecondDiv{background-color: lightgrey;
+  width:100%;
+  margin: auto;
+  text-align: center;
+
+}
+
+.search-bar{display: block;
+  width: 20%;
+  margin: auto;
+}
+.google-button{display: inline-block;}
+.spacing{padding-top: 1px;
+  padding-bottom: 1px;
+}
+label{margin: 0px;}
+
+.extra{ display: inline-block;
+  width: 33%;
+  text-align: center;
+  margin-top: 1px;
+
+}
+.blocking{display: block;}
+
+.first{background-color: aquamarine;}
+
+.secondClass {background-color: rgb(47, 245, 179);}
+.thirdClass{background-color: rgb(10, 244, 166);}
+
+
+p{text-align: center;
+font-size: 9px;}
