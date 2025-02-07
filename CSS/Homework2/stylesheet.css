@@ -22,9 +22,9 @@ img{margin-left: 25%;
 label{margin: 0px;}
 
 .extra{ display: inline-block;
-  width: 33%;
+  width: 33.1%;
   text-align: center;
-  margin-top: 1px;
+  padding: 1px 0px;
 
 }
 .blocking{display: block;}

@@ -1,0 +1,98 @@
+html{background-color:silver;
+}
+body{width: 400px;
+
+border: solid 1px black;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: white;
+border-radius: 20px;
+padding-bottom: 20px;
+
+}
+
+.close{display: inline-block;
+    width: 45%;
+    padding-left: 0px;
+    margin-left: 2%;
+
+}
+.twitter-logo{display: inline-block;
+width: auto;
+border: 1px black solid;}
+
+.timage{height: 10%;
+    width: 10px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+    text-align: center;
+}
+img{height: 10px;
+    width: 10px;
+}
+
+.signin-image{
+
+    border: 1px solid #d0dadf;
+    border-radius: 20px;
+    padding: 0.6em 0;
+    width: 45%;
+    display: block;
+    margin: 30px auto;
+}
+
+.line-splitter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.line-splitter hr{  border: 0;
+    border-top: 1px solid rgb(0, 0, 5);
+    margin: 10px;
+    flex-grow: 1;
+  }
+
+  .line-splitter span {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+.login{
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 2em;
+    margin: auto;
+    width: 55%;
+  }
+
+
+.next{
+    background-color: black;
+    color: white;
+    border: 1px solid #d0dadf;
+    border-radius: 2em;
+    padding: 0.6em 0;
+    width: 45%;
+    display: block;
+    margin: 30px auto;}
+
+.forgotPassword{    background-color: white;
+    color: black;
+    border: 1px solid #d0dadf;
+    border-radius: 2em;
+    padding: 0.6em 0;
+    width: 45%;
+    display: block;
+    margin: 30px auto;}
+    
+.last-p{
+    width: 55%;
+    margin: auto;
+}
