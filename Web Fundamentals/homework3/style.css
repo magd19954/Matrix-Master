@@ -1,0 +1,100 @@
+html{background-color: white;}
+body{
+    background-color: rgb(236, 235, 235);
+    width: 1000px;
+
+
+}
+
+
+
+.Header-div{display: block;
+    width: 100%;
+}
+.header-link{width: 30%;
+    display: inline-block;
+    text-align: left;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+form{display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+.main-header{font-size: 30px;
+    color:black;
+    width: 38%;
+    display: inline-block;
+    text-align: center;
+    background-color: silver;
+    font-weight: bold;
+}
+
+.main-div{display: flex; 
+    width: 100%;}
+
+
+
+.inner-main-div1{width: 20%;
+    padding-top: 30px;
+    margin:0px auto;
+    background-color: rgb(193, 191, 191);
+
+    margin-bottom: 50px;
+
+
+
+    
+
+}
+
+.inner-main-div{width: 23%;
+    margin:0px auto;
+
+
+}
+
+.helping-link{margin: 0px 1px 0px 1px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 47%;
+    background-color: rgb(226, 225, 225);
+    font-weight: bold;
+    
+}
+
+.form-div{margin-top: 20px;
+    margin-top: 10 px;
+width: 90%;
+display: block;
+background-color: gray;
+}
+.lower-section-links{width: 100%;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+}
+
+.extra-link{font-size: 22px;}
+
+.links-div{
+    margin-top: 30px;
+}
+
+.inner-table{border: none;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.inner-table th{background-color: silver;}
+.inner-table td{background-color: white;
+    border-top: 1px silver solid;
+    border-bottom: 1px silver solid;
+}
+
+.bold-link{font-weight: bold;
+    font-size: 20px;
+
+}
