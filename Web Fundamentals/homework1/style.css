@@ -65,6 +65,7 @@ img{height: 10px;
   }
 
 .login{
+    display: block;
     padding: 10px;
     border: 1px black solid;
     border-radius: 2em;

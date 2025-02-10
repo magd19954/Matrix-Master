@@ -1,0 +1,102 @@
+
+
+*{border: 1px solid red;}
+html{width: 1010px;}
+body{width: 1000px;}
+
+.head{font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.secondP{font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+.div-form{width: 38%;
+display: inline-block;}
+
+a{margin: 5px 2.5px;}
+
+
+.filter-inf{display: block;
+margin: 5px 2.5px;}
+
+.div-mainimage{width: 31%;
+    display: inline-block;}
+
+
+.big-imag{
+    width: 380px;
+    height: 380px;
+}
+
+.profile-image{display: inline-block;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+.main-image{display: block;
+width: 300px;
+height: 260px;}
+
+.input-toggel{
+    background: none;
+    border: 1px white solid; /* Removes border */
+    font-size: 16px; /* Adjust size */
+    cursor: pointer;
+    padding: 1px;
+    margin: 2px;
+
+}
+
+
+
+.thirdP{
+    font-size: 14px;
+
+    display: inline-block;
+    margin: 0px;
+    width: 230px;
+}
+
+.div-toggle{display: block;
+    width: 100px;
+    margin: 3px 10px;
+    margin-bottom: 10px;
+}
+
+.se{display: inline-block;
+width: 190px;}
+
+.secondray-adds{display: block;
+    flex-direction: column;
+    width: 190px;
+
+
+}
+
+.secondray-adds span{font-family: 'Courier New', Courier, monospace;
+
+    font-size: 11px;
+    color: rgb(247, 150, 166);
+    font-weight: bold;
+    display: block;}
+
+.secondray-adds p{
+    margin: 0px;
+    font-size: 10px;
+}
+
+.secondray-adds img{width: 150px;
+    display: block;
+height: 100px;}
+
+.logos{display: block;
+    margin-top: 10px;
+
+}
+.lastP{margin: 10px 3px;
+width: 200px;}
