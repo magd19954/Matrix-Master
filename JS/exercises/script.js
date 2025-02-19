@@ -190,12 +190,14 @@ function addTodo() {
 
   document.getElementById('changeImageButton').addEventListener('click', function(){
     var img = document.getElementById('myImage');
-    if(img.src === "./images/download (1).jpeg"){
-      img.src = "./images/download.jpeg";
-    } else {
-      img.src = "./images/download (1).jpeg";
+    
+    if(img.src.endsWith("download%20(1).jpeg") || img.src.endsWith("download (1).jpeg")) {
+        img.src = "./images/download.jpeg";
+    } else if (img.src.endsWith("download.jpeg")) {
+        img.src = "./images/download (1).jpeg";
     }
-  });
+});
+
 
   
 
