@@ -1,0 +1,66 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+}
+
+.half {
+  width: 40%;
+  margin: auto;
+
+  align-items: start;
+  display: block;
+  margin-top: 20px;
+  padding: 0;
+  height: auto;
+}
+
+.first {
+  background-color: bisque;
+  width: 56%;
+  height: fit-content;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: silver;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: lightskyblue;
+}
+
+table {
+  border-radius: 20px;
+}
