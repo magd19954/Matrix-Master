@@ -13,9 +13,10 @@ console.log (factorial(5));
 
 
 //recursiv factorial
-let recfact = 1;
+
 
 function recursiveFactorial(n) {
+    let recfact = 1;
     if (n === 1 || n === 0) {
         return recfact;
     }
