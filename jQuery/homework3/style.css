@@ -1,0 +1,81 @@
+body{
+margin: 0;
+padding: 0;
+width: 100%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.outter{
+   width: 50%;
+   border: 1px solid black;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.time{
+   font-family: 'Times New Roman', Times, serif ;
+   color: rgb(154, 155, 155);
+   font-size: 100px;
+   font-weight: 500px;
+}
+
+.seprator{
+   font-family: 'Times New Roman', Times, serif ;
+   color: rgb(154, 155, 155);
+   font-size: 100px;
+   font-weight: 500px;
+}
+
+.startb{
+   margin: auto 2px auto 15px;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   font-size: 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.resetb{
+   margin: auto 5px auto 5px;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   font-size: 20px;
+   background-color: #d7d8d9;
+   color: white;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.custome{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   font-size: 20px;
+   background-color: #8d8f90;
+   color: white;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+
+
+}
