@@ -1,0 +1,50 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+body{
+    display:flex;
+    flex-direction: column;
+    font-weight: 500;
+    align-items: center;
+    margin: 50px auto;
+    width: 100%;
+    
+   
+ }
+
+ .sec1{
+    width:50%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    
+ }
+
+ .sec12{
+    padding-top: 35px;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+ }
+
+ #thirdp{
+    color: green;
+ }
+
+ .sec123{
+    padding-top: 35px;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
