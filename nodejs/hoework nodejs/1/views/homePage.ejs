@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>time line</h1>
+    <% if(po.length>0){%>
+        <div class="posts-class">
+            <% for(let i=0 ;i<po.length ; i++) {%>
+                <div class="dvv-class">
+                    <h2><%=po[i].name%> - <%=po[i].createdAt%></h2>
+                    <p><%=po[i].message %></p>
+                </div>
+    
+            <%}%>
+        </div>
+
+
+    <%}%>
+
+
+</body>
+</html>

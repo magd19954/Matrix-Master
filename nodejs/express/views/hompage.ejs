@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <%- include("head")%>
+
+</head>
+<body>
+<%- include('header')%>
+    <div>
+        <form action="/add-new-user" method="post">
+            <input type="text" placeholder="username" name="username">
+            <input type="text" placeholder="email" name="email">
+            <button>Add new User</button>
+        </form>
+    </div>
+
+
+    <h1>Home page</h1>
+    <% if (users.length > 0) { %>
+        <ol>
+            <% for (var i = 0; i < users.length; i++) { %>
+                <li>
+
+                    <a href="/about/<%= users[i].username %>/<%= users[i].admin %>">
+                        <%= users[i].username %> - email: <%= users[i].email %>
+                    </a>
+                    <a href="/delete/user/<%=users[i]._id%>"><button>delete</button></a>
+                    <a href="/update/user/<%=users[i]._id%>"><button>update</button></a>
+
+                </li>
+            <% } %>
+        </ol>
+    <% } else { %>
+        <h1>No users added</h1>
+    <% } %>
+    
+    
+    
+</body>
+</html>    

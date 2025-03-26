@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <%- include("head")%>
+
+</head>
+<body>
+<%- include('header')%>
+    <div>
+        <form action="/edite-user-form/<%=user._id%>" method="post">
+            <input type="text" value="<%=user.username%>" placeholder="username" name="username">
+            <input type="text" value="<%=user.email%> placeholder="email" name="email">
+            <button>save</button>
+        </form>
+    </div>
+
+
+    
+    
+    
+    
+</body>
+</html>    
