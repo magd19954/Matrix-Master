@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <div>
+        <form action="/faceboook" method="post">
+            <input type="text" name="name" placeholder="Enter your name">
+            <textarea id="message" name="postText" rows="4" cols="30"></textarea>
+            <button>post</button>
+        </form> 
+    </div>
+    <% if (users.length > 0) { %>
+        <h1>We have posts</h1>
+    
+        <% for (let i = 0; i < users.length; i++) { %>
+            <div>
+                <h2><%= users[i].name %> </h2>
+                <p>posted on: <%= users[i].dateOfPost %></p>
+                <p> the post is:<%= users[i].postText %></p>
+            </div>
+        <% } %>
+    
+    <% } else { %>
+        <h1>No posts</h1>
+    <% } %>
+    
+    
+</body>
+</html>
