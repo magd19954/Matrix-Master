@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-        <%- include("head")%>
-
+    <%- include("head") %>
 </head>
 <body>
-<%- include('header')%>
+    <%- include('header') %>
+
     <div>
         <form action="/add-new-user" method="post">
-            <input type="text" placeholder="username" name="username">
-            <input type="text" placeholder="email" name="email">
-            <button>Add new User</button>
+            <input type="text" placeholder="Username" name="username">
+            <input type="text" placeholder="Email" name="email">
+            <button>Add New User</button>
         </form>
     </div>
 
+    <h1>Home Page</h1>
 
-    <h1>Home page</h1>
     <% if (users.length > 0) { %>
         <ol>
             <% for (var i = 0; i < users.length; i++) { %>
                 <li>
-
                     <a href="/about/<%= users[i].username %>/<%= users[i].admin %>">
-                        <%= users[i].username %> - email: <%= users[i].email %>
+                        <%= users[i].username %> - Email: <%= users[i].email %>
                     </a>
-                    <a href="/delete/user/<%=users[i]._id%>"><button>delete</button></a>
-                    <a href="/update/user/<%=users[i]._id%>"><button>update</button></a>
+                    <a href="/delete/user/<%= users[i]._id %>"><button>Delete</button></a>
+                    <a href="/update/user/<%= users[i]._id %>"><button>Update</button></a>
+                    <br><br>
 
+                    <% if (users[i].comments.length > 0) { %>
+                        <% for (let x = 0; x < users[i].comments.length; x++) { %>
+                            <h3><%= users[i].comments[x].body %></h3>
+                            <form action="/delete-comment/<%= users[i]._id %>/<%= users[i].comments[x]._id %>" method="post">
+                                <button>Delete</button>
+                            </form>
+                            
+                        <% } %>
+                    <% } %>
+
+                    <br><br>
+                    <form action="/add-new-comment/<%= users[i]._id %>" method="POST">
+                        <input type="text" placeholder="Comment..." autocomplete="off" name="body">
+                        <button>Add Comment</button>
+                    </form>
                 </li>
             <% } %>
         </ol>
     <% } else { %>
         <h1>No users added</h1>
     <% } %>
-    
-    
-    
+
 </body>
-</html>    
+</html>

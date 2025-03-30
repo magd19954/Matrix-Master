@@ -6,9 +6,18 @@ const userSchema=new mongoose.Schema(
             type:String,
             required:false
         },
+        comments:[{
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'comment'
+        }]
+        ,
         email:{
             type:String,
             required:true
+        }
+        ,created_at:{
+            type:Date,
+            default:Date.now()
         }
     }
 )

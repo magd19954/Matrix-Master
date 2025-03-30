@@ -1,14 +1,42 @@
 const userModel=require('../models/userModels')
+const commentModel=require('../models/commentModels')
 const homePage=function (req, res) {
     userModel.find()
-        .then(result=>{
-            res.render('hompage',{users:result})    
+    .sort({created_at:-1})
+    .populate("comments")
+    .then(result=>{        res.render('hompage',{users:result})    
         })
-        .catch(err=>{
-            console.log(err);
+    .catch(err=>{
+        console.log(err);
         })
     
     
+}
+
+const delComment=function(req,res){
+    const { userId, commentId } = req.params;
+    userModel.findById(userId)
+    .then(user => {
+        user.comments = user.comments.filter(id => id.toString() !== commentId);
+        user.save()
+            .then(()=>{
+                commentModel.findByIdAndDelete(commentId)
+                    .then(()=>{
+                        res.redirect('/')})
+                        .catch(err=>{
+                            console.log(err);
+                            })
+
+            })
+            .catch(err=>{
+                console.log(err);
+            })
+
+    })
+    .catch(err => {
+        console.log(err);
+        })
+        
 }
 
 const aboutUser = function(req, res) {
@@ -64,7 +92,37 @@ const editeUserForm=function(req,res){
             console.log(err);
         })
 }
+const addComment=function(req,res){
+    let userID=req.params.userid;
+
+if(req.body.body!=""&& userID){
+    let commentData={
+        ...req.body,
+        user:userID
+    }
+    let newComment= new commentModel(commentData)
+    newComment.save()
+        .then(result=>{
+            userModel.findById(userID)
+                .then(userinfo=>{                    userinfo.comments.push(newComment._id)
+                    userinfo.save()
+                    .then(result=>{
+                    res.redirect('/')
+                    })
+                    .catch(err=>{
+                        console.log(err);
+                    })
+                })
+                .catch(err=>{
+                    console.log(err);
+                    })
+            
+        })
+        .catch(err=>{
+            console.log(err);
+        })
+}}
 
 module.exports={
-    homePage,aboutUser,notFound,addNewUser,deleteUser,editeUserPage,editeUserForm
+    homePage,aboutUser,notFound,addNewUser,deleteUser,editeUserPage,editeUserForm,addComment,delComment
 }
